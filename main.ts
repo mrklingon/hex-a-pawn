@@ -17,10 +17,12 @@ input.onButtonPressed(Button.A, function () {
 })
 input.onButtonPressed(Button.B, function () {
     if (MOVNUM == 2) {
+        ACTS = ACT4
         MOVNUM = 4
         BOARDS = BOARD4
     } else {
         if (MOVNUM == 4) {
+            ACTS = ACT6
             MOVNUM = 6
             BOARDS = BOARD6
         }
@@ -46,6 +48,9 @@ function ShowBoard () {
 let NewBoard = ""
 let Y = 0
 let X = 0
+let ACTS: string[] = []
+let ACT6: string[] = []
+let ACT4: string[] = []
 let BOARD6: string[] = []
 let BOARDS: string[] = []
 let BOARD4: string[] = []
@@ -74,4 +79,8 @@ let BOARD2 = ["123489", "123759"]
 BOARD4 = ["143559", "235449", "133458", "122469", "235667", "423567", "134668", "126459", "223559", "233557", "133449"]
 BOARDS = BOARD2
 BOARD6 = ["453666", "111456", "224556", "226445", "145666", "356444", "334555", "255444", "225666", "144555", "663555"]
+let ACT2 = ["242536", "1415"]
+ACT4 = ["153547", "1415", "153536", "242526", "265758", "2635", "4748", "1524", "3536", "3536", "36"]
+ACT6 = ["4758", "15", "2647", "2469", "4758", "5869", "473536", "2458", "2658", "1547", "3569"]
+ACTS = ACT2
 ShowBoard()
