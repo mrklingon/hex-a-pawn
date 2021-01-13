@@ -36,7 +36,7 @@ function ShowBoard () {
         `)
     for (let value of BLACK) {
         findXY(value)
-        led.plotBrightness(X, Y, 113)
+        led.plotBrightness(X, Y, 66)
     }
     for (let value of WHITE) {
         findXY(value)
